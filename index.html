@@ -38,7 +38,9 @@
             margin-bottom: 20px;
         }
         .profile-pic img {
-            width: 100%;
+            width: 100%;  /* This will cover the full width of the container */
+            height: 100%;  /* This will cover the full height of the container */
+            object-fit: cover;  /* This will cover the content box, may result in image getting cut off if it doesn't have the same aspect ratio as the box */
         }
         .name {
             font-size: 26px;
